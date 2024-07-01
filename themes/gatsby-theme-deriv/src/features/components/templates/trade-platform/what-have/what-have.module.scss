@@ -1,0 +1,23 @@
+@use 'features/styles/theme/theme-mixins' as *;
+
+.what_have_wrapper {
+  @include breakpoints(tablet) {
+    block-size: 31.1rem;
+  }
+}
+.flex_items{
+ 
+  @include breakpoints(tablet) {
+    inline-size: 49%;
+    justify-content: center;
+  }
+}
+.image_item{
+  block-size: 23rem;
+  
+  @include breakpoints(tablet) {
+    block-size: 30rem;
+    inline-size: 49%;
+    justify-content: center;
+  }
+}

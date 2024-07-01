@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "swiper": ["../node_modules/swiper"]
+        },
+        "jsx": "react",
+        "lib": ["ES2021.String", "DOM", "DOM.Iterable"],
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "moduleResolution": "Bundler",
+        "module": "ESNext",
+        "resolveJsonModule": true,
+        "downlevelIteration": true
+    }
+}

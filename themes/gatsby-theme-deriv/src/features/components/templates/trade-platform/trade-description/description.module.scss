@@ -1,0 +1,7 @@
+@use 'features/styles/theme/theme-mixins' as *;
+
+.description_section {
+  @include breakpoints(tablet) {
+    padding-inline: 25rem;
+  }
+}
