@@ -54,10 +54,10 @@ jobs:
               with:
                   apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                  command: pages deploy sites/eu/public --project-name=eu-deriv-com-pages --branch=main
+                  command: pages deploy sites/eu/public --project-name=eu-signup-deriv-com-pages --branch=main
 
             - name: Cloudflare production link ✨
-              run: echo "New website - http://eu-deriv-com-pages.pages.dev"
+              run: echo "New website - http://eu-signup-deriv-com-pages.pages.dev"
             - name: upload-artifact
               uses: actions/upload-artifact@v4
               with:

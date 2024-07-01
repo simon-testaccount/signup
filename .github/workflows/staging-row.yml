@@ -60,7 +60,7 @@ jobs:
               with:
                   apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                   accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                  command: pages deploy sites/row/public --project-name=row-deriv-com-pages --branch=staging
+                  command: pages deploy sites/row/public --project-name=row-signup-deriv-com-pages --branch=staging
 
             - name: Cloudflare preview link ✨
               run: echo "New staging website - http://staging-row.cf-pages-deriv-com.deriv.com"
