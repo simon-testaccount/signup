@@ -63,7 +63,7 @@ jobs:
                   command: pages deploy sites/eu/public --project-name=eu-signup-deriv-com-pages --branch=staging
 
             - name: Cloudflare preview link ✨
-              run: echo "New staging website - http://staging-eu.cf-pages-deriv-com.deriv.com"
+              run: echo "New staging website - http://staging.eu-signup-deriv-com-pages"
 
             - name: Building docker image 🐳
               run: docker build -t ${{ secrets.DOCKERHUB_ORGANISATION }}/deriv-com:latest-staging  -t ${{ secrets.DOCKERHUB_ORGANISATION }}/deriv-com:$GITHUB_SHA .
