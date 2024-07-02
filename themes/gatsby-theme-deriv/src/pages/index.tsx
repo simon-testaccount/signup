@@ -1,12 +1,16 @@
-import React from 'react'
-import HomePage from 'features/pages/home'
+import React, { useEffect } from 'react'
 import { SEO } from 'components/containers'
 import { TGatsbyHead } from 'features/types'
 import { WithIntl } from 'components/localization'
 
-const Home = ({ pageContext }: TGatsbyHead) => {
-    const {region} = pageContext
-    return <HomePage region={region}/>
+const Home = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.location.replace('https://deriv.com')
+        }
+    }, [])
+
+    return null
 }
 
 export default WithIntl()(Home)
