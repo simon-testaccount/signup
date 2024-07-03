@@ -1,6 +1,6 @@
 import React from 'react'
 import Loadable from '@loadable/component'
-import { Signup, WhatOurClientsSay } from '../../home/_lazy-load'
+import { Signup, WhatOurClientsSay } from '../../_home/_lazy-load'
 import Hero from './components/_hero'
 import ImageTextSwitching from './components/_image-text-switching'
 import Tablebtn from './components/_table-btn'
