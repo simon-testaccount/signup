@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
-import Tabs from '../trade-types/components/_tabs'
+import Tabs from '../_trade-types/components/_tabs'
 import { Mobile, Desktop } from '../../components/containers'
 import { usePageLoaded } from 'components/hooks/use-page-loaded'
 import { QueryImage, LocalizedLinkText } from 'components/elements'

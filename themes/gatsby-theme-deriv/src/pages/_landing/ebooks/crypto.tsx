@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Signup, WhatOurClientsSay } from '../../home/_lazy-load'
+import { Signup, WhatOurClientsSay } from '../../_home/_lazy-load'
 import ImageText from './components/_image-text'
 import Topics from './components/_topics'
 import { StocksEbookProps } from './forex'
