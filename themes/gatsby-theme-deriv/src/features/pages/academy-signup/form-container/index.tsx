@@ -56,7 +56,7 @@ const SignUpFormContainer = () => {
                             url={{
                                 target: '_blank',
                                 type: 'non-company',
-                                href: security_pdf_link,
+                                href: 'https://docs.deriv.com/tnc/security-and-privacy.pdf',
                             }}
                         />,
                     ]}

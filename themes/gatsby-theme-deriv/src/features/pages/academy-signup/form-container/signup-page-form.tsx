@@ -54,7 +54,7 @@ const SignUpPageForm = () => {
                                 url={{
                                     type: 'non-company',
                                     target: '_blank',
-                                    href: '/terms-and-conditions/#clients',
+                                    href: 'https://deriv.com/terms-and-conditions#clients',
                                 }}
                             />,
                         ]}

@@ -150,9 +150,11 @@ const AffiliateSignupForm = ({
                         color="black-3"
                     >
                         <Localize translate_text="_t_Want to sign up as a trader?_t_" />
-                        <Typography.Link href={`${language}/signup`} textcolor="brand" ml="2x">
-                            <Localize translate_text="_t_Create a Deriv account_t_" />
-                        </Typography.Link>
+                        <Link url={{ type: 'non-company', href: `https://deriv.com/signup/` }}>
+                            <Typography.Link textcolor="brand" ml="2x">
+                                <Localize translate_text="_t_Create a Deriv account_t_" />
+                            </Typography.Link>
+                        </Link>
                     </Header>
                 </StyledNote>
                 <InputGroup>

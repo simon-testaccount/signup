@@ -10,7 +10,7 @@ const AffiliateNav = () => {
     return (
         <NavTemplate
             renderLogo={() => (
-                <Link url={{ type: 'internal', to: '/partners/' }}>
+                <Link url={{ type: 'non-company', href: 'https://deriv.com/partners/' }}>
                     <Image
                         src={PartnerNavLogo}
                         alt={'nav affiliates'}

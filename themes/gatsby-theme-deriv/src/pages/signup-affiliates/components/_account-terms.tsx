@@ -14,6 +14,7 @@ type AgreementDataType = {
     link_text: TString
     name: string
     href?: string
+    is_third_party?: boolean
 }
 const StyledHeader = styled(Header)<{ is_rtl?: boolean }>`
     @media ${device.tabletL} {
@@ -54,13 +55,15 @@ const agreement_data: AgreementDataType[] = [
     {
         link_text: '_t_I have read and accepted <0>Deriv’s terms and conditions</0>_t_',
         name: 'tnc_accepted',
-        href: 'tnc/business-partners-general-terms.pdf',
+        href: 'https://docs.deriv.com/tnc/business-partners-general-terms.pdf',
+        is_third_party: true,
     },
     {
         link_text:
             '_t_I have read and accepted <0>Deriv’s general terms of use and affiliates and introducing brokers’ terms and conditions</0>_t_',
         name: 'tnc_affiliate_accepted',
-        href: 'tnc/business-partners-affiliates-and-introducing-brokers-row.pdf',
+        href: 'https://docs.deriv.com/tnc/business-partners-affiliates-and-introducing-brokers-row.pdf',
+        is_third_party: true,
     },
     {
         link_text:
@@ -105,7 +108,7 @@ const AccountTerms = ({
                 />
             </Header>
 
-            {agreement_data.map(({ link_text, name, href }, index) => {
+            {agreement_data.map(({ link_text, name, href, is_third_party = false }, index) => {
                 return (
                     <>
                         <Flex.Box key={`agreement-${name}`} align="center" pb="8x">
@@ -127,7 +130,7 @@ const AccountTerms = ({
                                             <LocalizedLink
                                                 key={0}
                                                 style={{ color: 'red', textDecoration: 'none' }}
-                                                to={`/${href}`}
+                                                to={`${is_third_party ? `${href}` : `/${href}`}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 external
