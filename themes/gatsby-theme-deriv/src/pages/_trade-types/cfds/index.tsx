@@ -8,7 +8,7 @@ import { Header } from 'components/elements'
 import Layout from 'components/layout/layout'
 import { Localize, WithIntl, localize } from 'components/localization'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
-import { StyledBox } from 'pages/markets/static/style/_markets-style'
+import { StyledBox } from 'pages/_markets/static/style/_markets-style'
 import { TGatsbyHead } from 'features/types'
 
 const TradingCFDIncreases = Loadable(() => import('./_trading-cfd-increases'))
@@ -18,7 +18,7 @@ const AvailableMarkets = Loadable(() => import('./_available-markets'))
 
 const CFD = ({ pageContext }: TGatsbyHead) => {
     const { region } = pageContext
-    const content = region === "eu" ? cfd_content : cfd_content.concat(non_eu_cfd_content)
+    const content = region === 'eu' ? cfd_content : cfd_content.concat(non_eu_cfd_content)
 
     return (
         <Layout region={region}>
@@ -43,9 +43,9 @@ const CFD = ({ pageContext }: TGatsbyHead) => {
                     <StyledBox
                         key={alt}
                         item_title={
-                            typeof title === 'function' ? title({ is_eu: region === "eu" }) : title
+                            typeof title === 'function' ? title({ is_eu: region === 'eu' }) : title
                         }
-                        text={typeof text === 'function' ? text({ is_eu: region === "eu" }) : text}
+                        text={typeof text === 'function' ? text({ is_eu: region === 'eu' }) : text}
                         icon={<img width="48px" height="48px" src={src} alt={localize(alt)} />}
                     />
                 ))}

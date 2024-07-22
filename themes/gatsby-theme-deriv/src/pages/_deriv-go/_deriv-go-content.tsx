@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import device from 'themes/device'
 import { Container, Flex, SectionContainer } from 'components/containers'
 import { Header, Text, QueryImage } from 'components/elements'
-import { ContentType } from 'pages/landing/_types'
+import { ContentType } from 'pages/_landing/_types'
 import { Localize, localize } from 'components/localization'
 
 type TDerivGoContent = {
@@ -29,7 +29,6 @@ const query = graphql`
         exponential_growth_rate: file(relativePath: { eq: "deriv-go/exponential-growth.png" }) {
             ...fadeIn
         }
-        
     }
 `
 

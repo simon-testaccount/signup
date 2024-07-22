@@ -8,7 +8,7 @@ import PageNotFound from 'features/pages/404'
 import { SEO } from 'components/containers'
 import Layout from 'components/layout/layout'
 import { WithIntl } from 'components/localization'
-import { ContentType } from 'pages/landing/_types'
+import { ContentType } from 'pages/_landing/_types'
 import { TGatsbyHead } from 'features/types'
 
 const items: ContentType[] = [
@@ -52,7 +52,7 @@ const items: ContentType[] = [
 const DerivGo = ({ pageContext }: TGatsbyHead) => {
     const { region } = pageContext
 
-    if (region === "row") {
+    if (region === 'row') {
         return (
             <Layout region={region}>
                 <Banner />

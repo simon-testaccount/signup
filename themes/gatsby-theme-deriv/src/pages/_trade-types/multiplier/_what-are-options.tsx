@@ -7,7 +7,7 @@ import device from 'themes/device'
 import { SectionContainer, Flex } from 'components/containers'
 import { Header, Text, QueryImage } from 'components/elements'
 import { localize, Localize } from 'components/localization'
-import { StyledBox } from 'pages/markets/static/style/_markets-style'
+import { StyledBox } from 'pages/_markets/static/style/_markets-style'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
@@ -148,7 +148,7 @@ const WhatAreOptions = () => {
                 </SmallContainer>
             </StyledSectionContainerHead>
             <SmallContainer direction="column" ai="flex-start">
-                {region === "eu" ? (
+                {region === 'eu' ? (
                     <Flex fd="column">
                         <Row mb="2rem">
                             <RowColumn isHeader>
@@ -354,8 +354,8 @@ const WhatAreOptions = () => {
                     ({ alt, item_title, src, text, item_title_eu, text_eu }) => (
                         <StyledBox
                             key={item_title || item_title_eu}
-                            item_title={region === "eu" ? item_title_eu : item_title}
-                            text={region === "eu" ? text_eu : text}
+                            item_title={region === 'eu' ? item_title_eu : item_title}
+                            text={region === 'eu' ? text_eu : text}
                             icon={<img width="48px" height="48px" src={src} alt={localize(alt)} />}
                         ></StyledBox>
                     ),

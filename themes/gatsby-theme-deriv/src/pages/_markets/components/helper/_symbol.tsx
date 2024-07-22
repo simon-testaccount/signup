@@ -7,7 +7,7 @@ import {
     StyledBadge,
 } from '../../static/style/_markets-style'
 import { Text } from 'components/elements'
-import { TMarketSymbol } from 'pages/markets/static/content/_types'
+import { TMarketSymbol } from 'pages/_markets/static/content/_types'
 import { Localize, localize } from 'components/localization'
 import { TString } from 'types/generics'
 

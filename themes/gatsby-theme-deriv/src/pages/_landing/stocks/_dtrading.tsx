@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import device from 'themes/device'
 import { Container, Flex, SectionContainer } from 'components/containers'
 import { Header, Text, QueryImage } from 'components/elements'
-import { StyledProps } from 'pages/landing/_types'
+import { StyledProps } from 'pages/_landing/_types'
 import { TString } from 'types/generics'
 import { Localize, localize } from 'components/localization'
 

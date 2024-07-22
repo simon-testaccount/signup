@@ -1,4 +1,4 @@
-import { StrapiImage } from '../who-we-are/_types'
+import { StrapiImage } from '../_who-we-are/_types'
 import { TString } from '../../types/generics'
 
 type THeroContactUs = { hero: { header: TString; sub_header: TString } }

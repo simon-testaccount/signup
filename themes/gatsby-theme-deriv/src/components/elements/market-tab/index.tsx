@@ -4,9 +4,9 @@ import { market_buttons } from './_utils'
 import { TAvailableLiveMarkets } from './_types'
 import { ContainerWrapper, MarketButton, MarketsContainer } from './_styles'
 import { Header } from 'components/elements'
-import AvailablePlatform from 'pages/trading-specification/components/_available-platform'
+import AvailablePlatform from 'pages/_trading-specification/components/_available-platform'
 import { Localize } from 'components/localization'
-import TradingSpecificationTable from 'pages/trading-specification/components/_trading_spec_table'
+import TradingSpecificationTable from 'pages/_trading-specification/components/_trading_spec_table'
 
 const TabStyledHeader = styled(Header)`
     font-family: 'Ubuntu';
