@@ -17,7 +17,7 @@ import { Localize, localize } from 'components/localization'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import { usePlatformQueryParam } from 'components/hooks/use-platform-query-param'
 import OtherMarketsSlider from 'features/components/molecules/other-markets-slider'
-import { TSimpleStepContent } from 'pages/markets/static/content/_types'
+import { TSimpleStepContent } from 'pages/_markets/static/content/_types'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
 const SimpleSteps = Loadable(() => import('components/custom/_simple-steps'))

@@ -7,7 +7,7 @@ import { Header, Text, QueryImage } from 'components/elements'
 import { Localize, localize } from 'components/localization'
 import { isIndexEven } from 'common/utility'
 import { useBrowserResize } from 'components/hooks/use-browser-resize'
-import { ContentType, StyledProps } from 'pages/landing/_types'
+import { ContentType, StyledProps } from 'pages/_landing/_types'
 
 const StyledSection = styled(SectionContainer)`
     @media ${device.tabletL} {

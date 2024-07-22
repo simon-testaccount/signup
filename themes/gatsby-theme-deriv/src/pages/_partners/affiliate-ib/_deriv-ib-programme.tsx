@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { TabsContainer } from '../../dmt5-trading-signals'
+import { TabsContainer } from '../../_dmt5-trading-signals'
 import DERIVIBDMT5Cards from './_dmt5-cards'
 import { CardWrapper } from './_partner-card'
 import { usePageLoaded } from 'components/hooks/use-page-loaded'
@@ -217,9 +217,9 @@ const RedButton = styled(LinkButton)<RedButtonProps>`
     display: flex;
     margin: auto;
     margin-bottom: 40px;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     @media ${device.tabletL} {
         padding-top: 10px;
         width: 100%;

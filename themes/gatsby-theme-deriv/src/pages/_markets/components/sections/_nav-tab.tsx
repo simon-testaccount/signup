@@ -5,7 +5,7 @@ import { Flex } from 'components/containers'
 import { Localize, LocalizedLink } from 'components/localization'
 import device from 'themes/device'
 import { usePlatformQueryParam } from 'components/hooks/use-platform-query-param'
-import { TNavTab, TTabButton, TTabList } from 'pages/markets/static/content/_types'
+import { TNavTab, TTabButton, TTabList } from 'pages/_markets/static/content/_types'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
 const TabsContainer = styled(Flex)`

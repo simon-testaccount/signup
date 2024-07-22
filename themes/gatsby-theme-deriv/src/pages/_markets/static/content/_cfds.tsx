@@ -43,7 +43,7 @@ import {
     StepIndicesDetails_CFD,
 } from './_details'
 import { TMarketContent } from './_types'
-import { JumpIndicesEU } from 'pages/markets/instruments/_markets'
+import { JumpIndicesEU } from 'pages/_markets/instruments/_markets'
 
 export const commodities_cfds: TMarketContent = {
     markets_list: {

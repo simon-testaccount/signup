@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import MarketInstruments from '../../../markets/components/sections/_market_instruments'
-import { SwapFreePairs } from '../../../markets/instruments/_submarkets'
+import MarketInstruments from '../../../_markets/components/sections/_market_instruments'
+import { SwapFreePairs } from '../../../_markets/instruments/_submarkets'
 import device from 'themes/device'
 import { Container, SectionContainer } from 'components/containers'
 import { Localize } from 'components/localization'
 import { Text } from 'components/elements'
 import { LinkButton } from 'components/form'
-import { TMarketContent } from 'pages/markets/static/content/_types'
+import { TMarketContent } from 'pages/_markets/static/content/_types'
 import { TString } from 'types/generics'
 
 const StyledSection = styled(SectionContainer)`

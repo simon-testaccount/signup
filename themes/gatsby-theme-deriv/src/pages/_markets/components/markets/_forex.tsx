@@ -15,7 +15,7 @@ import Flex from 'features/components/atoms/flex-box'
 import { Localize, localize } from 'components/localization'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import OtherMarketsSlider from 'features/components/molecules/other-markets-slider'
-import { TSimpleStepContent } from 'pages/markets/static/content/_types'
+import { TSimpleStepContent } from 'pages/_markets/static/content/_types'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
 //Lazy-load

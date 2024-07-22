@@ -18,7 +18,7 @@ import Flex from 'features/components/atoms/flex-box'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import { usePlatformQueryParam } from 'components/hooks/use-platform-query-param'
 import OtherMarketsSlider from 'features/components/molecules/other-markets-slider'
-import { TMarket, TSimpleStepContent } from 'pages/markets/static/content/_types'
+import { TMarket, TSimpleStepContent } from 'pages/_markets/static/content/_types'
 import { TSmartContent } from 'types/generics'
 import useVisibleContent from 'components/hooks/use-visible-content'
 import useBuildVariant from 'features/hooks/use-build-variant'
@@ -88,7 +88,10 @@ const crypto_content: SmartMarketItem[] = [
 const Cryptocurrencies = ({ simple_step_content }: CryptocurrenciesProps) => {
     const { region } = useBuildVariant()
     const { is_deriv_go } = usePlatformQueryParam()
-    const visible_items = useVisibleContent({ content: crypto_content, config: { is_eu : region === 'eu' ? true : false } })
+    const visible_items = useVisibleContent({
+        content: crypto_content,
+        config: { is_eu: region === 'eu' ? true : false },
+    })
 
     return (
         <>

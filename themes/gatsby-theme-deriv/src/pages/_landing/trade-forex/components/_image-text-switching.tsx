@@ -6,7 +6,7 @@ import { Container, SectionContainer, Desktop, Mobile } from 'components/contain
 import { Header, Text, QueryImage } from 'components/elements'
 import { localize, Localize } from 'components/localization'
 import { isIndexEven } from 'common/utility'
-import { ContentType, StyledProps } from 'pages/landing/_types'
+import { ContentType, StyledProps } from 'pages/_landing/_types'
 
 type ImageTextSwitchingProps = {
     reverse: boolean

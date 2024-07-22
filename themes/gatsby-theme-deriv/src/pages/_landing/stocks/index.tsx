@@ -14,7 +14,7 @@ import TenIndicesSVG from 'images/svg/stock-indices/stocks-10-world-indices.svg'
 import HighLeverageSVG from 'images/svg/stock-indices/stocks-high-leverage.svg'
 import FourtyStocksSVG from 'images/svg/stock-indices/stocks-80-analytic-objects.svg'
 import LowCapitalSVG from 'images/svg/stock-indices/stocks-minimum-capital.svg'
-import { ContentType } from 'pages/landing/_types'
+import { ContentType } from 'pages/_landing/_types'
 import { TGatsbyHead } from 'features/types'
 
 const query = graphql`
@@ -145,7 +145,7 @@ const Stocks = ({ pageContext }: TGatsbyHead) => {
     }, [])
 
     const data = useStaticQuery(query)
-    const display_items = region === "row" ? WhyTradeWithUsArr : WhyTradeWithUsArr_eu
+    const display_items = region === 'row' ? WhyTradeWithUsArr : WhyTradeWithUsArr_eu
 
     return (
         <Layout is_ppc_redirect region={region}>
@@ -166,7 +166,7 @@ const Stocks = ({ pageContext }: TGatsbyHead) => {
                 background_pattern={is_mobile ? '' : BackgroundFooterStocksPattern}
                 title="_t_All this is available on our Deriv MT5 platform_t_"
                 small_title={
-                    region === "row"
+                    region === 'row'
                         ? '_t_Enjoy high leverage and low spreads on our Deriv MT5 platform, now offering a range of stocks and stock indices from the brands you love._t_'
                         : '_t_Enjoy low spreads on our Deriv MT5 platform, now offering a range of stocks and stock indices from the brands you love._t_'
                 }

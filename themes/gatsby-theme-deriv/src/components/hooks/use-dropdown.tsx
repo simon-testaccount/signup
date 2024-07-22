@@ -8,7 +8,7 @@ import {
     useState,
 } from 'react'
 import { useOutsideClick } from 'components/hooks/use-outside-click'
-import { FormikErrors } from 'pages/trader-tools/common/_formik-types'
+import { FormikErrors } from 'pages/_trader-tools/common/_formik-types'
 
 type ErrorsType = { errors?: { leverage?: string; symbol?: string } }
 type TouchedType = { touched?: { leverage?: string; symbol?: string } }

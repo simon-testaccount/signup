@@ -17,7 +17,7 @@ import LinkButton from 'features/components/atoms/link-button'
 import Flex from 'features/components/atoms/flex-box'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import OtherMarketsSlider from 'features/components/molecules/other-markets-slider'
-import { TSimpleStepContent } from 'pages/markets/static/content/_types'
+import { TSimpleStepContent } from 'pages/_markets/static/content/_types'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
 //Lazy-load
@@ -69,22 +69,18 @@ const BasketIndices = ({ simple_step_content }: BasketIndicesProps) => {
                         </LinkButton.Primary>
                     </Flex.Box>
                     <FullWidthMultiColumn header="_t_Why trade basket indices on Deriv_t_">
-                        {(region === 'row' ? basket_indices_content : basket_indices_content_eu).map(
-                            ({ alt, src, text }) => (
-                                <StyledBox
-                                    key={text}
-                                    text={text}
-                                    icon={
-                                        <img
-                                            width="48px"
-                                            height="48px"
-                                            src={src}
-                                            alt={localize(alt)}
-                                        />
-                                    }
-                                />
-                            ),
-                        )}
+                        {(region === 'row'
+                            ? basket_indices_content
+                            : basket_indices_content_eu
+                        ).map(({ alt, src, text }) => (
+                            <StyledBox
+                                key={text}
+                                text={text}
+                                icon={
+                                    <img width="48px" height="48px" src={src} alt={localize(alt)} />
+                                }
+                            />
+                        ))}
                     </FullWidthMultiColumn>
                     <SimpleSteps
                         header="_t_Start trading basket indices on Deriv in 3 simple steps_t_"
@@ -94,7 +90,7 @@ const BasketIndices = ({ simple_step_content }: BasketIndicesProps) => {
                     <OtherMarketsSlider current_market="synthetic" />
                 </>
             )}
-            {region === 'eu' && <PageNotFound region={region}/>}
+            {region === 'eu' && <PageNotFound region={region} />}
         </>
     )
 }

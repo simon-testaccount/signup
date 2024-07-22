@@ -6,7 +6,7 @@ import Titlebtn from './components/_title-btn'
 import { WithIntl } from 'components/localization'
 import Layout from 'components/layout/layout'
 import { SEO } from 'components/containers'
-import { ContentType } from 'pages/landing/_types'
+import { ContentType } from 'pages/_landing/_types'
 import { TGatsbyHead } from 'features/types'
 
 const IconTextRow = Loadable(() => import('./components/_icon-text-row'))

@@ -6,7 +6,7 @@ import { BackgroundImageWrapper, Header, StaticImageWrapper } from 'components/e
 import { Localize, localize } from 'components/localization'
 import { LinkButton } from 'components/form'
 import device from 'themes/device'
-import { HeroProps } from 'pages/landing/_types'
+import { HeroProps } from 'pages/_landing/_types'
 import { useBrowserResize } from 'components/hooks/use-browser-resize'
 
 const Wrapper = styled(Container)`

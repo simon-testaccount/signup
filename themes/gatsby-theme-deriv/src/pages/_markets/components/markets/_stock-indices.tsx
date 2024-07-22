@@ -14,7 +14,7 @@ import { localize, Localize } from 'components/localization'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import { useBrowserResize } from 'components/hooks/use-browser-resize'
 import OtherMarketsSlider from 'features/components/molecules/other-markets-slider'
-import { TSimpleStepContent } from 'pages/markets/static/content/_types'
+import { TSimpleStepContent } from 'pages/_markets/static/content/_types'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
 //Lazy-load
@@ -28,9 +28,10 @@ const StockIndices = ({ simple_step_content }: StockIndicesProps) => {
     const [is_mobile] = useBrowserResize()
     const { region } = useBuildVariant()
 
-    simple_step_content[1].text = region === 'eu'
-        ? '_t_Open a real account, make a deposit, and start trading stocks, stock indices, and other markets._t_'
-        : '_t_Open a real account, make a deposit, and start trading stocks, indices and other markets._t_'
+    simple_step_content[1].text =
+        region === 'eu'
+            ? '_t_Open a real account, make a deposit, and start trading stocks, stock indices, and other markets._t_'
+            : '_t_Open a real account, make a deposit, and start trading stocks, indices and other markets._t_'
 
     return (
         <div>

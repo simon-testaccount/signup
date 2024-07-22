@@ -13,7 +13,7 @@ import Flex from 'features/components/atoms/flex-box'
 import { Localize, localize } from 'components/localization'
 import { FullWidthMultiColumn } from 'components/elements/full-width-multicolumn'
 import OtherMarketsSlider from 'features/components/molecules/other-markets-slider'
-import { TSimpleStepContent } from 'pages/markets/static/content/_types'
+import { TSimpleStepContent } from 'pages/_markets/static/content/_types'
 import useBuildVariant from 'features/hooks/use-build-variant'
 
 //Lazy-load
@@ -26,7 +26,7 @@ type CommoditiesProps = {
 const Commodities = ({ simple_step_content }: CommoditiesProps) => {
     const { region } = useBuildVariant()
     const show_digital_options = region === 'row' ? true : false
-    
+
     simple_step_content[1].text =
         '_t_Open a real account, make a deposit, and start trading commodities and other markets. _t_'
 
