@@ -48,6 +48,7 @@ const BuildPage = (page, actions, region) => {
     const who_we_are = /who-we-are/g.test(page.path)
     const is_cfds = /cfds/g.test(page.path)
     const is_options = /options/g.test(page.path)
+    const is_academy_signup = /academy-signup/g.test(page.path);
 
     if (is_careers) {
         createRedirect({
@@ -370,6 +371,15 @@ const BuildPage = (page, actions, region) => {
                 redirectInBrowser: true,
                 isPermanent: true,
             })
+        }
+
+        if (is_academy_signup) {
+            createRedirect({
+                fromPath: `/${lang}/academy-signup/`,
+                toPath: `/academy-signup/`,
+                redirectInBrowser: true,
+                isPermanent: true,
+            });
         }
 
         return current_page
