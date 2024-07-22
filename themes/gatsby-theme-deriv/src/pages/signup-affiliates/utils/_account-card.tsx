@@ -120,7 +120,7 @@ const AccountCard = ({
                             components={[
                                 <StyledLink
                                     external
-                                    to={`${language}/partners/affiliate-ib/`}
+                                    to={`https://deriv.com${language}/partners/affiliate-ib/`}
                                     key={0}
                                     target="_blank"
                                 />,

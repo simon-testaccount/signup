@@ -8,7 +8,7 @@ import Link from 'features/components/atoms/link'
 import Image from 'features/components/atoms/image'
 import { BuildVariantType } from 'features/types'
 
-const SignupCompleteAcademy = ({region}: BuildVariantType) => {
+const SignupCompleteAcademy = ({ region }: BuildVariantType) => {
     return (
         <Layout region={region}>
             <NavTemplate
