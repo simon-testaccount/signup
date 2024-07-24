@@ -11,7 +11,7 @@ const StaticNav = () => {
             has_centered_items
             has_centered_logo
             renderLogo={() => (
-                <Link url={{ type: 'internal', to: '/' }}>
+                <Link url={{ type: 'non-company', href: 'https://deriv.com/' }}>
                     <Image src={LogoImage} className={static_nav_logo} />
                 </Link>
             )}
