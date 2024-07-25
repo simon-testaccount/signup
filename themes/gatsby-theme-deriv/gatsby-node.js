@@ -380,8 +380,8 @@ const BuildPage = (page, actions, region) => {
                 redirectInBrowser: true,
                 isPermanent: true,
             });
+            lang = 'EN';
         }
-
         return current_page
     })
 }
