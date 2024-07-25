@@ -6,14 +6,13 @@ import { Localize } from 'components/localization'
 import Flex from 'features/components/atoms/flex-box'
 import Typography from 'features/components/atoms/typography'
 import LinkButton from 'features/components/atoms/link-button'
-import MainFooter from 'features/components/templates/footer'
-import MainRowNavigation from 'features/components/templates/navigation/main-nav'
 import { BuildVariantType } from 'features/types'
+import AcademyNav from 'features/components/templates/navigation/academy-nav'
 
-const CheckEmailContainer = ({region}: BuildVariantType) => {
+const CheckEmailContainer = ({ region }: BuildVariantType) => {
     return (
         <Layout region={region}>
-            <MainRowNavigation />
+            <AcademyNav />
             <Flex.Box
                 justify="center"
                 align="center"
@@ -34,12 +33,11 @@ const CheckEmailContainer = ({region}: BuildVariantType) => {
                 <CheckEmailSteps />
                 <LinkButton.Primary
                     id="dm-reenter-email-signup"
-                    url={{ type: 'internal', to: '/signup' }}
+                    url={{ type: 'internal', to: '/academy-signup' }}
                 >
                     <Localize translate_text="_t_Re-enter your email and try again_t_" />
                 </LinkButton.Primary>
             </Flex.Box>
-            <MainFooter />
         </Layout>
     )
 }
