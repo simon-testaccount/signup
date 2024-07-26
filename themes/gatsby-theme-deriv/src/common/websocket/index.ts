@@ -107,7 +107,7 @@ export class ApiManager {
         const pathname = isBrowser() ? window.location.pathname : '';
         const isAcademySignup = pathname.includes('/academy-signup');
 
-        const finalLanguage = isAcademySignup ? 'EN' : language;
+        const finalLanguage = isAcademySignup ? 'en' : language;
 
         const socket_url = getSocketURL()
         const app_id = getAppId()
