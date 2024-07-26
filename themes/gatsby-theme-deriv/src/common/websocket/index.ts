@@ -45,7 +45,7 @@ export class ApiManager {
                 const pathname = isBrowser() ? window.location.pathname : '';
                 const isAcademySignup = pathname.includes('/academy-signup');
 
-                const language = isAcademySignup ? 'EN' : (lang === 'ach' ? getCrowdin() : lang?.replace('-', '_'));
+                const language = isAcademySignup ? 'en' : (lang === 'ach' ? getCrowdin() : lang?.replace('-', '_'));
 
                 const socket_url = getSocketURL()
                 const app_id = getAppId()
