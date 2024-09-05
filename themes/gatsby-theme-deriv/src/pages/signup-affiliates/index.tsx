@@ -13,7 +13,8 @@ import AtomicContainer from 'features/components/atoms/container'
 import { TGatsbyHead } from 'features/types'
 import device from 'themes/device'
 import Map from 'images/common/affiliate/map.png'
-
+import Cookies from 'js-cookie'
+import { affiliateTokenURL } from 'common/url-affiliate-token'
 const meta_attributes: TMetaAttributes = {
     og_title: '_t_Partner Signup Page | Deriv_t_',
     og_description:
@@ -48,6 +49,9 @@ const StyledContainer = styled(Container)`
 `
 
 const AffiliateSignup = ({ pageContext }: TGatsbyHead) => {
+
+    const aff_token_cookie = Cookies.getJSON("referrer_token")
+    const aff_token_url = affiliateTokenURL()
     const { region } =  pageContext
     const [show_wizard, setShowWizard] = useState<boolean>(false)
     const [is_online, setIsOnline] = useState(isBrowser() && navigator.onLine)
@@ -82,6 +86,7 @@ const AffiliateSignup = ({ pageContext }: TGatsbyHead) => {
             tnc_affiliate_accepted: false,
             promote_eu: false,
         },
+        referrer_token: aff_token_cookie ?? aff_token_url ?? undefined,
     })
 
     const {
@@ -101,6 +106,7 @@ const AffiliateSignup = ({ pageContext }: TGatsbyHead) => {
             window.removeEventListener('online', handleStatusChange)
             window.removeEventListener('offline', handleStatusChange)
         }
+
     }, [is_online])
 
     useEffect(() => {
