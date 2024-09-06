@@ -105,7 +105,6 @@ const AffiliateSignup = ({ pageContext }: TGatsbyHead) => {
             window.removeEventListener('online', handleStatusChange)
             window.removeEventListener('offline', handleStatusChange)
         }
-
     }, [is_online])
 
     useEffect(() => {
