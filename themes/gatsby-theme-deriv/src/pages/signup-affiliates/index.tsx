@@ -49,7 +49,7 @@ const StyledContainer = styled(Container)`
 `
 
 const AffiliateSignup = ({ pageContext }: TGatsbyHead) => {
-    const aff_token_cookie = Cookies.getJSON("affiliate_tracking")
+    const aff_token_cookie = Cookies.getJSON("referrer_token")
     const aff_token_url = affiliateTokenURL()
     const { region } =  pageContext
     const [show_wizard, setShowWizard] = useState<boolean>(false)
