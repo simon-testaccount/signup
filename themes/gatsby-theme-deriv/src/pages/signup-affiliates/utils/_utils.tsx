@@ -76,6 +76,8 @@ export const Submit = ({
                 referrer_token: affiliate_account.referrer_token,
             }),
         })
+        console.log("affiliate token in _utils sending to api==>", affiliate_account.referrer_token)
+
 }
 
 export const trackEvent = (eventData: TEvents['ce_partner_account_signup_form']) => {

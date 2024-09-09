@@ -51,6 +51,7 @@ const StyledContainer = styled(Container)`
 const AffiliateSignup = ({ pageContext }: TGatsbyHead) => {
     const aff_token_cookie = Cookies.getJSON("referrer_token")
     const aff_token_url = affiliateTokenURL()
+    console.log("aff_token_url in index ==>", aff_token_url )
     const { region } =  pageContext
     const [show_wizard, setShowWizard] = useState<boolean>(false)
     const [is_online, setIsOnline] = useState(isBrowser() && navigator.onLine)
