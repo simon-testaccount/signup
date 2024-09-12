@@ -72,6 +72,9 @@ export const Submit = ({
                 company_registration_number:
                     affiliate_account.account_details?.company_registration_number.trim(),
             }),
+            ...(affiliate_account.referrer_token && {
+                referrer_token: affiliate_account.referrer_token,
+            }),
         })
 }
 

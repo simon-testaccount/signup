@@ -31,6 +31,7 @@ type AffiliateAccountTypes = {
         tnc_affiliate_accepted: boolean
         promote_eu: boolean
     }
+    referrer_token: string;
 }
 type AffiliateSendTypes = {
     address_city: string
