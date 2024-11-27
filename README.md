@@ -2,23 +2,23 @@
   Deriv.com
 </h1>
 
-Deriv.com - An online trading platform that offers a wide selection of derivatives to trade on 24/7.
+Academy and Partner Legacy Signup
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/binary-com/deriv-com/Release%20Staging) ![node](https://img.shields.io/badge/node-%3E%3D18.12.1-blue.svg) ![npm](https://img.shields.io/badge/npm-%3E%3D8.19.2-blue.svg) [![GATSBY](https://img.shields.io/badge/Gatsby-663399?style=flat&logo=gatsby&logoColor=white)](https://github.com/styled-components/styled-components) [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components) ![Sonar Tech Debt](https://img.shields.io/sonar/tech_debt/binary-com_deriv-com?server=https%3A%2F%2Fsonarcloud.io)
 ![Sonar Violations (short format)](https://img.shields.io/sonar/violations/binary-com_deriv-com?server=https%3A%2F%2Fsonarcloud.io)
 
 ## In this document:
 
--   [Other documents](#other-documents)
--   [Pre-installation](#pre-installation)
--   [Quick start](#quick-start)
--   [How to contribute](#how-to-contribute)
--   [PR Formating guideline](#pr-formating-guideline)
--   [PR without translations](#pr-without-translation)
--   [PR with translations](#pr-with-translation)
--   [Manage releases](#manage-releases)
--   [Test link deployment](#test-link-deployment)
--   [FAQ](#faq)
+- [In this document:](#in-this-document)
+- [Other Documents](#other-documents)
+- [Pre-installation](#pre-installation)
+- [Quick start](#quick-start)
+- [How to contribute](#how-to-contribute)
+  - [PR Formating guideline](#pr-formating-guideline)
+  - [PR without translation](#pr-without-translation)
+  - [PR with translation](#pr-with-translation)
+- [Manage releases](#manage-releases)
+- [Test link deployment](#test-link-deployment)
 
 ## Other Documents
 
