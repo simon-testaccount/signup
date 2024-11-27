@@ -1,5 +1,5 @@
 <h1 align="center">
-  Deriv.com
+  academy.deriv.com and partners.deriv.com
 </h1>
 
 Academy and Partner Legacy Signup
